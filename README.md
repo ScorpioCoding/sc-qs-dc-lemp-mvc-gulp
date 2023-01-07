@@ -19,3 +19,9 @@ ScorpioCoing QuickStart Docker Nginx Php stack
 - The frontend http://localhost:6080
 
 - phpMyadmin http://localhost:6081
+
+## Gulp Usage
+
+- open second terminal and goto \_gulpfiles
+- run command to start `gulp`
+- to stop enter keys `ctrl+c`

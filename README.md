@@ -23,5 +23,8 @@ ScorpioCoing QuickStart Docker Nginx Php stack
 ## Gulp Usage
 
 - open second terminal and goto \_gulpfiles
-- run command to start `gulp`
+- run command to init gulp to create `node_modules` folder  
+  `npm install`
+- run command to start gulp  
+  `gulp`
 - to stop enter keys `ctrl+c`

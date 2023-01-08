@@ -5,8 +5,6 @@ namespace App\Modules\Site\Controllers;
 use App\Core\Controller;
 use App\Core\View;
 
-use App\Modules\Site\Utils\MetaSite;
-use App\Modules\Site\Utils\Translation;
 
 /**
  *  Home
@@ -24,17 +22,15 @@ class Home extends Controller
     $trans = array();
     $data = array();
 
-    $viewTemplatePath = PATH_MODULES;
-    $viewTemplatePath .= 'Site/Views';
+    $viewPath = PATH_MODULES;
+    $viewPath .= 'Site/Views';
 
-    $viewName = $viewTemplatePath . DS;
+    $viewTemplatePath = PATH_MODULES;
+    $viewTemplatePath .= 'Site/Views/temp';
+
+    $viewName = $viewPath . DS;
     $viewName .= strtolower($args['controller']);
 
-    //TODO GET META DATA FROM FILE
-    //$meta = MetaSite::getMeta($args);
-
-    //TODO GET TRANSLATION FROM FILE
-    //$trans = Translation::getTranslation($args['lang']);
 
     /*
     * render the view
